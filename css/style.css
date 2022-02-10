@@ -1,0 +1,79 @@
+p.blocktext {
+    text-align: center;
+    color: white;
+    
+}
+
+h1 {
+    text-align: center;
+    color:white;
+}
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  
+  /* Add padding to containers */
+  .container{
+    width: 300px;
+    height: 300px;
+    border-color:#f44336;
+    
+  }
+
+
+body {
+    background-image:url(../image/log.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    font-size: 20px;
+    height: 40px;
+  }
+
+
+
