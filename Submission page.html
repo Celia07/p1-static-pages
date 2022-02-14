@@ -34,33 +34,31 @@
     <form class="container">
       <div class="col-md-6">
         <label for="amount" class="form-label">Amount</label>
-        <input type="text" pattern="^\d+(?:\.\d{0,2})$" class="form-control" id="inputEmail4">
+        <input type="text" pattern="^\d+(?:\.\d{0,2})$" class="form-control" id="amount">
       </div>
      
       <div class="col-12">
         <label for="inputAddress" class="form-label">Description</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Description">
+        <input type="text" class="form-control" id="inputAddress" placeholder="Description" id = 'description'>
       </div>
       
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Reimbursement type
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">LODGING</a></li>
-          <li><a class="dropdown-item" href="#">FOOD</a></li>
-          <li><a class="dropdown-item" href="#">TRAVEL</a></li>
-          <li><a class="dropdown-item" href="#">OTHER</a></li>
-        </ul>
-        </div>
+      <div>
+        <select id = 'reimbType' class="form-select" aria-label="Default select example">
+          <option selected>Select Reimbursement Type</option>
+          <option value="0">Food</option>
+          <option value="1">Lodging</option>
+          <option value="2">Travel</option>
+          <option value="3">Other</option>
+        </select>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id = 'submit' class="btn btn-primary">Submit</button>
       </div>
     </form>
   </body>
   <footer>
     <h6 class="footer-text"> Copyright Project 01(Bryan & Celia) </h6>
   </footer>
+  <script src="js/submission.js" ></script>
  <script src="js/bootstrap.bundle.min.js" ></script>
   </html>
