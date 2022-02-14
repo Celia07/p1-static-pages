@@ -25,35 +25,42 @@
   </nav>
   <!-------------------------------------------------------------------------------------------------->
   <div>
-  <h1 >REIMBURSEMENT SYSTEM</h1><br>
+  <h2 >SUBMISSION PAGE</h2><br>
   </div>
   <div>
-  <p class="blocktext">Welcome to our reimbursement System.To begin please log in!!!</p><br>
+  <p class="blocktext">Fill this form to create a reimbursement request</p><br>
   </div>
-
   <body>
-
-    <!--block of code for input -->
-    <form id ="LoginForm" action="#" method="post">
+    <form class="container">
+      <div class="col-md-6">
+        <label for="amount" class="form-label">Amount</label>
+        <input type="text" pattern="^\d+(?:\.\d{0,2})$" class="form-control" id="inputEmail4">
+      </div>
+     
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Description</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Description">
+      </div>
       
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input id="username" type="text" placeholder="Enter Username" name="uname" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input id="password" type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button type="submit" onclick="login()"> Login</button>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Reimbursement type
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">LODGING</a></li>
+          <li><a class="dropdown-item" href="#">FOOD</a></li>
+          <li><a class="dropdown-item" href="#">TRAVEL</a></li>
+          <li><a class="dropdown-item" href="#">OTHER</a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
-    <div>
-    
-    </body>
+  </body>
   <footer>
     <h6 class="footer-text"> Copyright Project 01(Bryan & Celia) </h6>
   </footer>
-
-    
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/login.js"></script>
-</html>
+ <script src="js/bootstrap.bundle.min.js" ></script>
+  </html>
